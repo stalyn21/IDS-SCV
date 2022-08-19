@@ -59,6 +59,13 @@ $ ./IDS-SCV/install.sh
 Reemplace you IP and mask inside of the snort config file:
 ```
 $ sudo nano /etc/snort/snort.conf
+
+---- Before ----
+ipvar HOME_NET any
+
+---- Now ----
+ipvar HOME_NET 192.168.56.107/24
+
 ```
 
 ### OPTIONAL
@@ -68,6 +75,14 @@ $ ./IDS-SCV/firewall.sh
 ```
 
 ## Usage
+Put you interface in snort valid file:
+```
+$ nano IDS-SCV/snort_setup/snort_valid.sh
+
+---- Interface Variable ----
+interface='enp0s8'
+
+```
 
 Valid and run snort rules:
 ```
