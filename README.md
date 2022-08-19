@@ -80,7 +80,7 @@ Put you interface in snort valid file:
 $ nano IDS-SCV/snort_setup/snort_valid.sh
 
 ---- Interface Variable ----
-interface='enp0s8'
+interface='interface'
 
 ```
 
