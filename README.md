@@ -64,7 +64,7 @@ $ sudo nano /etc/snort/snort.conf
 ipvar HOME_NET any
 
 ---- Now ----
-ipvar HOME_NET 192.168.56.107/24
+ipvar HOME_NET <ip addr>
 
 ```
 
