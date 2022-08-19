@@ -77,6 +77,7 @@ Vagrant.configure("2") do |config|
     git clone https://github.com/stalyn21/IDS-SCV.git
     echo "==== Giving file permission to install and setup Snort ===="
     chmod 777 ./IDS-SCV/install.sh
+    chmod 777 ./IDS-SCV/firewall.sh
     chmod 777 ./IDS-SCV/snort_setup/snort_valid.sh
     echo "==== Configure ssh connection ===="
     sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
